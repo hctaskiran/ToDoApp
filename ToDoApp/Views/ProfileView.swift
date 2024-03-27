@@ -12,7 +12,14 @@ struct ProfileView: View {
     var body: some View {
         NavigationView{
             VStack{
-                
+                Image(systemName: "person.circle")
+                    .resizable()
+                    .scaledToFit()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 125, height: 120)
+                    .overlay {
+                        Circle().stroke(.green, lineWidth: 4)
+                    }.shadow(radius: 10)
             }
             .navigationTitle("Profile")
             
