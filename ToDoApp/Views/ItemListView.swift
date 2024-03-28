@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ItemListView: View {
     let item: TodoListItemModel
-    @StateObject var viewModel = ProfileViewViewModel()
+    @StateObject var viewModel = ItemListViewViewModel()
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
